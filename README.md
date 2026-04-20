@@ -100,23 +100,6 @@ pyinstaller --name svg-converter --onefile --windowed app.py
 
 Binary will be created under `dist/`.
 
-## Open Source / GitHub Readiness
-
-This repository now includes:
-
-- `LICENSE` (MIT)
-- `.gitignore` for virtualenv/build/local artifact hygiene
-- `pyproject.toml` for standards-based packaging and console entrypoint
-- `CONTRIBUTING.md` with local setup and contribution workflow
-- `requirements-dev.txt` for test/development installs
-
-Suggested next GitHub steps:
-
-1. Create a new GitHub repository and push this folder.
-2. Add repository topics (`svg`, `dxf`, `pyqt`, `cad`).
-3. Enable Issues and Discussions.
-4. Add GitHub Actions CI for `python -m pytest -q`.
-
 ## Architecture (for scalability)
 
 - `svg_to_dxf_app/plugins/manifest.json`

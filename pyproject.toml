@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "svg-converter-gui"
+version = "0.1.0"
+description = "Plugin-ready PyQt5 desktop converter (currently SVG to DXF)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Open Source Contributors" }
+]
+keywords = ["svg", "dxf", "pyqt5", "converter", "cad"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: X11 Applications :: Qt",
+  "Topic :: Multimedia :: Graphics :: Graphics Conversion"
+]
+dependencies = [
+  "PyQt5>=5.15.9,<6.0",
+  "svgpathtools>=1.6.1,<2.0",
+  "ezdxf>=1.3.0,<2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0,<9.0"
+]
+
+[project.scripts]
+svg-converter = "svg_to_dxf_app.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["svg_to_dxf_app"]

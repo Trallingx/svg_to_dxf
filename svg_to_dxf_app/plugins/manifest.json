@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    {
+      "id": "svg-to-dxf",
+      "name": "SVG to DXF",
+      "description": "Convert SVG vector paths to DXF polylines.",
+      "module": "svg_to_dxf_app.plugins.svg_to_dxf_plugin",
+      "class": "SvgToDxfPlugin",
+      "input_extensions": [".svg"],
+      "output_extension": ".dxf",
+      "enabled": true
+    },
+    {
+      "id": "svg-to-png",
+      "name": "SVG to PNG",
+      "description": "Planned mode for raster export.",
+      "module": "svg_to_dxf_app.plugins.svg_to_png_plugin",
+      "class": "SvgToPngPlugin",
+      "input_extensions": [".svg"],
+      "output_extension": ".png",
+      "enabled": false
+    }
+  ]
+}

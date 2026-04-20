@@ -1,0 +1,4 @@
+# Optional dependencies for non-core plugins.
+# Core app runs with requirements.txt only.
+# Example future entry:
+# cairosvg>=2.7.0,<3.0  # useful for svg-to-png plugins

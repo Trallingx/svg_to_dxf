@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+
+# Local outputs / artifacts
+converted_outputs/
+*.dxf
+*.prt
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
